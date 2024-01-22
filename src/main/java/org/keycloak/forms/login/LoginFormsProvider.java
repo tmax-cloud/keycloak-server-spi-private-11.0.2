@@ -19,6 +19,7 @@ package org.keycloak.forms.login;
 
 import org.keycloak.authentication.AuthenticationFlowContext;
 import org.keycloak.models.ClientScopeModel;
+import org.keycloak.models.IdentityProviderModel;
 import org.keycloak.models.UserModel;
 import org.keycloak.models.utils.FormMessage;
 import org.keycloak.provider.Provider;
@@ -75,6 +76,8 @@ public interface LoginFormsProvider extends Provider {
     Response createInfoPage();
 
     Response createUpdateProfilePage();
+
+    Response createUpdateProfilePage(IdentityProviderModel identityProvider);
 
     Response createIdpLinkConfirmLinkPage();
 
