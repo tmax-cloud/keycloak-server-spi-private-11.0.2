@@ -132,7 +132,9 @@ public enum EventType {
     TOKEN_EXCHANGE_ERROR(true),
 
     PERMISSION_TOKEN(true),
-    PERMISSION_TOKEN_ERROR(false);
+    PERMISSION_TOKEN_ERROR(false),
+
+    DELETE_SELF(true);
 
     private boolean saveByDefault;
 
